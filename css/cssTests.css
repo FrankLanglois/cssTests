@@ -1,0 +1,74 @@
+.article {
+    /*float: left;*/
+    /*width: 80%;*/
+    color: blue;
+
+}
+
+.article2 {
+    /*float: left;*/
+    /*width: 80%;*/
+    color: green;
+
+}
+
+.sidebar {
+    /*float: right;*/
+    /*width: 20%;*/
+    color: red;
+
+}
+
+
+#featured {
+
+}
+
+div {
+
+    /*float: left;*/
+    width: 400px;
+    padding: 10px;
+    display: inline-flex;
+}
+
+
+
+@keyframes fade {
+    0% { opacity:0; }
+    100% { opacity:1; display:block; }
+}
+
+.is-visible {
+    opacity: 1;
+    animation: fade 2s;
+}
+
+.is-hidden {
+    opacity: 0;
+    animation: fade 2s reverse;
+}
+
+.is-removed {
+    display: none;
+}
+
+.btn {
+    background-color: #1e8fd2; /* gray */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #1b6194;
+}
+.btn:hover {
+    background-color: #1b77ab; /* blueish */
+}
+
+.btn:active {
+    background-color: #1b85b8;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+/*.btn:focus {*/
+    /*!* blueish focus ring *!*/
+    /*box-shadow: 0 0 3px rgba(48,48,96,.3);*/
+/*}*/

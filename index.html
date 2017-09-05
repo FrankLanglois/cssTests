@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="cssTests.css">
+    <link rel="stylesheet" href="css/cssTests.css">
 </head>
 <body>
 <div id="featured" style="width: 100%"  >
     <!--<article>Test</article>-->
+    <div id="message" class="is-removed"></div>
     <div class="article" >Generally, a Layout style only has a single selector: a single ID or
         class name. However, there are times when a Layout needs to respond
         to different factors.</div>
@@ -30,6 +31,23 @@
     level element such as the body element and allows the article and
     sidebar content to be swapped, moving the sidebar from the right
     to the left and vice versa for the article.</div>
+<button class="btn" onclick="showMessage('Hello World!')">Show Message</button>
 
 </body>
+
+<script>
+    function showMessage (s) {
+        var el = document.getElementById('message');
+        el.innerHTML = s;
+        /* set state */
+        el.className = 'is-visible';
+        setTimeout(function(){
+            /* set state back */
+            el.className = 'is-hidden';
+            setTimeout(function(){
+                el.className = 'is-removed';
+            }, 1000);
+        }, 5000);
+    }
+</script>
 </html>

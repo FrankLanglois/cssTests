@@ -1,0 +1,26 @@
+div {
+    margin: 10px;
+    width: 25%;
+}
+
+p::first-letter {
+    color: red;
+    font-size: 2em;
+}
+
+p::after {
+    content: "!";
+}
+
+div::before {
+    content: "\2192";
+    padding: 5px;
+}
+
+div::first-line {
+    background-color: #1b6194;
+}
+
+div::selection {
+    background-color: red;
+}

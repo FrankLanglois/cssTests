@@ -1,0 +1,52 @@
+div {
+    margin: 10px;
+}
+
+input[type=checkbox]:checked + label {
+    color: #f00;
+}
+input[type=text]:active + label {
+    background-color: #9BC850;
+}
+
+input[type=text]:focus {
+    background-color: #ffe121;
+}
+
+.section2 {
+    display: inline-flex;
+    flex-flow: column;
+}
+
+p {
+    margin: 5px;
+    padding: 5px;
+}
+
+p:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: green;
+}
+
+p:first-of-type {
+    background-color: #1b85b8;
+}
+
+p:nth-child(3) {
+    background-color: #9BC850;
+}
+
+p:nth-child(even) {
+    background-color: #b0b0b0;
+}
+
+/*p:nth-child(odd) {*/
+    /*background-color: gray;*/
+/*}*/
+
+p:nth-last-of-type(2) {
+    background-color: yellow;
+}

@@ -1,0 +1,149 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+.grid-container {
+    border: solid 4px #000;
+    display: inline-grid;
+    /*grid-template-columns: 6em 1em 6em 1em 6em 1em 6em;*/
+    /*grid-template-rows: 6em 1em 6em;*/
+
+    /* To replace the 2 rows above */
+    /*grid: 6em 1em 6em 1em 6em 1em 6em / 6em 1em 6em;*/
+
+    /* Repeating pattern */
+    grid-template-columns: 6em repeat(3, 1em 6em);
+    grid-template-rows: 6em 1em 6em;
+}
+
+.grid-item {
+    background-color: #A62E5C;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    padding: 1em;
+    overflow: hidden;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.grid-item-01 {
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 2;*/
+    /*grid-row-start: 1;*/
+    /*grid-row-end: 2;*/
+
+    /* To replace the 4 rows above */
+    /*grid-column: 1/2 ;*/
+    /*grid-row: 1/2;*/
+
+    /* To replace the 2 rows above */
+    /* grid-area: row start / col start / row end / col end */
+    grid-area: 1/1/2/2;
+}
+
+.grid-item-02 {
+    background-color: #9BC850;
+    /*grid-column-start: 3;*/
+    /*grid-column-end: 4;*/
+    /*grid-row-start: 1;*/
+    /*grid-row-end: 2;*/
+
+    /* To replace the 4 rows above */
+    /*grid-column: 3/4 ;*/
+    /*grid-row: 1/2;*/
+
+    /* To replace the 2 rows above */
+    /* grid-area: row start / col start / row end / col end */
+    grid-area: 1/3/2/4;
+}
+
+.grid-item-03 {
+	background-color: #675BA7;
+    /*grid-column-start: 5;*/
+    /*grid-column-end: 6;*/
+    /*grid-row-start: 1;*/
+    /*grid-row-end: 2;*/
+
+    /* To replace the 4 rows above */
+    /*grid-column: 5/6 ;*/
+    /*grid-row: 1/2;*/
+
+    /* To replace the 2 rows above */
+    /* grid-area: row start / col start / row end / col end */
+    grid-area: 1/5/2/6;
+}
+
+.grid-item-04 {
+	background-color: #2A9FBC;
+    /*grid-column-start: 7;*/
+    /*grid-column-end: 8;*/
+    /*grid-row-start: 1;*/
+    /*grid-row-end: 2;*/
+
+    /* To replace the 4 rows above */
+    /*grid-column: 7/8 ;*/
+    /*grid-row: 1/2;*/
+
+    /* To replace the 2 rows above */
+    /* grid-area: row start / col start / row end / col end */
+    grid-area: 1/7/2/8;
+}
+
+.grid-item-05 {
+	background-color: #F15B2A;
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 2;*/
+    /*grid-row-start: 3;*/
+    /*grid-row-end: 4;*/
+
+    /* To replace the 4 rows above */
+    /*grid-column: 1/2 ;*/
+    /*grid-row: 3/4;*/
+
+    /* To replace the 2 rows above */
+    /* grid-area: row start / col start / row end / col end */
+    grid-area: 3/1/4/2;
+}
+
+.grid-item-06 {
+    background-color: #675BA7;
+    /*grid-column-start: 3;*/
+    /*grid-column-end: 4;*/
+    /*grid-row-start: 3;*/
+    /*grid-row-end: 4;*/
+
+    /* To replace the 4 rows above */
+    /*grid-column: 3/4;*/
+    /*grid-row: 3/4;*/
+
+    /* To replace the 2 rows above */
+    /* grid-area: row start / col start / row end / col end */
+    grid-area: 3/3/4/4;
+}
+
+.grid-item-07 {
+    background-color: #A62E5C;
+    /*grid-column-start: 5;*/
+    /*grid-column-end: 6;*/
+    /*grid-row-start: 3;*/
+    /*grid-row-end: 4;*/
+
+    /* To replace the 4 rows above */
+    grid-column: 5/6 ;
+    grid-row: 3/4;
+
+    /* To replace the 2 rows above */
+    /* grid-area: row start / col start / row end / col end */
+    grid-area: 3/5/4/span 3;
+}
+
+
+.grid-item strong {
+    display: block;
+    font-size: 130%;
+}
